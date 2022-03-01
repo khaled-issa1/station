@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "952011523962",
+    "project_id": "station-8923e",
+    "storage_bucket": "station-8923e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952011523962:android:4bd1c75ee73925b2b1b8c3",
+        "android_client_info": {
+          "package_name": "kh.lahcen_station"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952011523962-p6jd85mpbqa47baeqikt3pvjhsies9l7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kh.lahcen_station",
+            "certificate_hash": "fc258d83e9f22eec5b9b82a78fb993129f3e6bde"
+          }
+        },
+        {
+          "client_id": "952011523962-t4u7q0oj4e5clag62nbtgaj3j662955b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf2bdnP68teosIfK8W0P16G0TuWILOHUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952011523962-t4u7q0oj4e5clag62nbtgaj3j662955b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
