@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'package:lahcen_station/pages/FirebaseConnectionFail.dart';
+import 'package:lahcen_station/pages/LoginPage.dart';
 import 'package:lahcen_station/pages/OnGoingPage.dart';
+import 'package:lahcen_station/pages/RegisterPage.dart';
 import 'package:lahcen_station/pages/SplashPage.dart';
 import 'package:lahcen_station/pages/StationPage.dart';
 import 'package:lahcen_station/serv/NavServices.dart';
@@ -22,6 +25,8 @@ class Page1 extends StatelessWidget {
           routes: {
             OnGoingPage.routeName:(context)=>OnGoingPage(),
             StationPage.routeName: (context)=>StationPage(),
+            LoginPage.routeName: (context)=>LoginPage(),
+            RegisterPage.routeName:(context)=>RegisterPage(),
 
           },
           navigatorKey: NavServices.navServices.navkey,

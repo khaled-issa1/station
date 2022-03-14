@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:lahcen_station/pages/LoginPage.dart';
 import 'package:lahcen_station/pages/StationPage.dart';
 import 'package:lahcen_station/serv/NavServices.dart';
 
@@ -109,14 +110,14 @@ class OnGoingPage extends StatelessWidget {
                 ,horizontal: 30),
 
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
-              color: Color.fromRGBO(21, 72, 84, 1),
+              color: Colors.greenAccent,
             ),
             child: TextButton(
               child: Text('Next',
                 style: TextStyle(color: Colors.white),
               ),
               onPressed: (){
-               NavServices.navServices.NavPush(StationPage.routeName);
+               NavServices.navServices.NavPush(LoginPage.routeName);
               },
             ),
           )
