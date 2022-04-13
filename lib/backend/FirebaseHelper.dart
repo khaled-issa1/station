@@ -48,43 +48,43 @@ class FirebaseHelper {
 
 
 
-  getvar1Value() async {
-    DataSnapshot r = await database.child('var/var1').get();
+  getvar1Value(String deviceName) async {
+    DataSnapshot r = await database.child('${deviceName}/var1').get();
     return r.value;
   }
 
 
 
-  getvar2Value() async {
-    DataSnapshot r = await database.child('var/var2').get();
+  getvar2Value(String deviceName) async {
+    DataSnapshot r = await database.child('${deviceName}/var2').get();
     return r.value;
   }
 
 
 
-  getvar3Value() async {
-    DataSnapshot r = await database.child('var/var3').get();
+  getvar3Value(String deviceName) async {
+    DataSnapshot r = await database.child('${deviceName}/var3').get();
     return r.value;
   }
 
 
 
-  getvar4Value() async {
-    DataSnapshot r = await database.child('var/var4').get();
+  getvar4Value(String deviceName) async {
+    DataSnapshot r = await database.child('${deviceName}/var4').get();
     return r.value;
   }
 
 
 
-  getvar5Value() async {
-    DataSnapshot r = await database.child('var/var5').get();
+  getvar5Value(String deviceName) async {
+    DataSnapshot r = await database.child('${deviceName}/var5').get();
     return r.value;
   }
 
 
 
-  getvar6Value() async {
-    DataSnapshot r = await database.child('var/var6').get();
+  getvar6Value(String deviceName) async {
+    DataSnapshot r = await database.child('${deviceName}/var6').get();
     return r.value;
   }
 
@@ -92,16 +92,16 @@ class FirebaseHelper {
 
 
 
-  Stream<List<num>> getAllVar()async*{
+  Stream<List<num>> getAllVar(String NameDevice)async*{
     List<num> v=[];
     late num v1;late num v2;late num v3;late num v4;late num v5;late num v6;
     methd()async{
-       v1=   await getvar1Value();
-       v2=   await getvar2Value();
-       v3=   await getvar3Value();
-       v4=   await getvar4Value();
-       v5=   await getvar5Value();
-       v6=   await getvar6Value();
+       v1=   await getvar1Value(NameDevice);
+       v2=   await getvar2Value(NameDevice);
+       v3=   await getvar3Value(NameDevice);
+       v4=   await getvar4Value(NameDevice);
+       v5=   await getvar5Value(NameDevice);
+       v6=   await getvar6Value(NameDevice);
        v= await [v1,v2,v3,v4,v5,v6];
 
     }

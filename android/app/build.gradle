@@ -37,11 +37,14 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "kh.lahcen_station"
-        minSdkVersion 19
+        multiDexEnabled true
+        minSdkVersion 20
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
+
+
 
     buildTypes {
         release {

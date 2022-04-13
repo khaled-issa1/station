@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lahcen_station/backend/FirebaseHelper.dart';
+import 'package:lahcen_station/pages/MicrocontrollerMenu.dart';
 import 'package:lahcen_station/pages/RegisterPage.dart';
 import 'package:lahcen_station/pages/StationPage.dart';
 import 'package:lahcen_station/serv/NavServices.dart';
@@ -96,8 +97,7 @@ class LoginPage extends StatelessWidget {
                       String? errorData =await FirebaseHelper.firebaseHelper.login(email1!, password1!);
 
                       if(errorData==null){
-                        NavServices.navServices.NavRep(StationPage.routeName);
-
+                        NavServices.navServices.NavRep(MicrocontrollerMenu.routeName);
                       }
                       else{
                         ScaffoldMessenger.of(context).showSnackBar(
